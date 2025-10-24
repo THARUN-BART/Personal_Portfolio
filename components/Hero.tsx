@@ -28,8 +28,10 @@ const Hero: React.FC<HeroProps> = ({ onOpenTerminal }) => {
               Computer Science & Business Engineering Student
             </h2>
             <p className="text-base sm:text-lg text-slate-400 mb-6 sm:mb-8 leading-relaxed max-w-2xl mx-auto lg:mx-0">
-              Passionate about building scalable mobile applications with Flutter and solving complex problems through DSA. 
+              Passionate about building scalable mobile applications with Flutter and solving problems through Data Structures and Algorithms.
               Aspiring Software Engineer with expertise in C++, Python, and full-stack development.
+              Aspiring DevOps Engineer with hands-on experience in Docker, Jenkins, and Azure virtual machines.
+
             </p>
             <div className="flex flex-wrap gap-3 sm:gap-4 justify-center lg:justify-start">
               <a href="#projects" className="bg-blue-600 hover:bg-blue-700 px-4 sm:px-6 py-2 sm:py-3 rounded-lg font-semibold transition-colors flex items-center gap-2 text-sm sm:text-base">
