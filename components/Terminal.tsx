@@ -66,15 +66,15 @@ Goal: Software Engineer at a top product-based company
     skills: (): TerminalEntry => ({
       type: 'output',
       content: `
-┌─ TECHNICAL SKILLS ─────────────────────────────────────────┐
-│ Programming: C++ (85%), Python (80%), Dart (75%), Java (75%)│
-│              JS (70%)                                       │
-│ Frameworks:  Flutter (80%), Firebase (75%), Git (85%)       │
-│ DevOps:      Docker (70%), Azure VM (70%), Jenkins (50%)    │
+┌─ TECHNICAL SKILLS ──────────────────────────────────────────┐
+│ Programming: C++ (75%), Python (75%), Dart (75%), Java (75%)│
+│              JS (60%)                                       │
+│ Frameworks:  Flutter (70%), Firebase (75%), Git (85%)       │
+│ DevOps:      Docker (70%), Azure VM (50%), Jenkins (50%)    │
 │ Databases:   Firestore (75%), REST APIs (75%)               │
-│ Scripting:   Linux Shell Scripting (80%)                    │
+│ Scripting:   Linux Shell Scripting (70%)                    │
 │ Tools:       GitHub (85%), VS Code, Postman, Figma          │
-└────────────────────────────────────────────────────────────┘
+└─────────────────────────────────────────────────────────────┘
 `
     }),
 
@@ -97,12 +97,12 @@ Goal: Software Engineer at a top product-based company
     experience: (): TerminalEntry => ({
       type: 'output',
       content: `
-┌─ PROFESSIONAL EXPERIENCE ──────────────────────────────────┐
-│ Flutter Developer Intern                                   │
-│ Data Science Center, RIT (2024 - Present)                 │
-│ • Developed Flutter apps with Firebase backend             │
-│ • Improved app performance and UI/UX                       │
-└────────────────────────────────────────────────────────────┘
+┌─ PROFESSIONAL EXPERIENCE ───────────────────────────────────┐
+│ Flutter Developer Intern                                    │
+│ Data Science Center, RIT (AUG 2025-JUL 2025)                │
+│ • Developed Flutter apps with Firebase backend              │
+│ • Improved app performance and UI/UX                        │
+└─────────────────────────────────────────────────────────────┘
 `
     }),
 
@@ -136,10 +136,23 @@ LeetCode: leetcode.com/u/THARUN29112006
 `
     }),
 
-    resume: (): TerminalEntry => ({
-      type: 'output',
-      content: 'Resume not available. Contact: tharunpoogavanam@gmail.com'
-    }),
+    // ✅ UPDATED RESUME COMMAND
+    resume: (): TerminalEntry => {
+      const resumeUrl = '/Tharun_P_Resume.pdf';
+
+      // Trigger download
+      const link = document.createElement('a');
+      link.href = resumeUrl;
+      link.download = 'Tharun_P_Resume.pdf';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+
+      return {
+        type: 'output',
+        content: '📄 Downloading resume...'
+      };
+    },
 
     github: (): TerminalEntry => {
       window.open('https://github.com/THARUN-BART', '_blank');

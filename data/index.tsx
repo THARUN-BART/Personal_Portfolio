@@ -51,11 +51,11 @@ export const skillsData: SkillCategory[] = [
   {
     category: "Programming Languages",
     items: [
-      { name: "C++", level: 85, icon: <SiCplusplus size={20} /> },
-      { name: "Python", level: 80, icon: <SiPython size={20} /> },
-      { name: "JavaScript", level: 75, icon: <SiJavascript size={20} /> },
+      { name: "C++", level: 75, icon: <SiCplusplus size={20} /> },
+      { name: "Python", level: 75, icon: <SiPython size={20} /> },
+      { name: "JavaScript", level: 60, icon: <SiJavascript size={20} /> },
       { name: "Dart", level: 75, icon: <SiDart size={20} /> },
-      { name: "Java", level: 75, icon: <Coffee size={20} /> },
+      { name: "Java", level: 50, icon: <Coffee size={20} /> },
       { name: "C", level: 70, icon: <Wrench size={20} /> },
       { name: "HTML/CSS", level: 70, icon: <Globe size={20} /> }
     ]
@@ -63,7 +63,7 @@ export const skillsData: SkillCategory[] = [
   {
     category: "Frameworks & Tools",
     items: [
-      { name: "Flutter", level: 80, icon: <SiFlutter size={20} /> },
+      { name: "Flutter", level: 70, icon: <SiFlutter size={20} /> },
       { name: "Firebase", level: 75, icon: <SiFirebase size={20} /> },
       { name: "MongoDB", level: 70, icon: <SiMongodb size={20} /> },
       { name: "Supabase", level: 65, icon: <SiSupabase size={20} /> },
@@ -77,11 +77,11 @@ export const skillsData: SkillCategory[] = [
     category: "DevOps & Cloud",
     items: [
       { name: "Docker", level: 70, icon: <SiDocker size={20} /> },
-      { name: "Azure VM", level: 70, icon: <Cloud size={20} /> },
-      { name: "Linux Shell", level: 75, icon: <SiLinux size={20} /> },
+      { name: "Azure VM", level: 50, icon: <Cloud size={20} /> },
+      { name: "Linux Shell", level: 70, icon: <SiLinux size={20} /> },
       { name: "Jenkins", level: 50, icon: <SiJenkins size={20} /> },
       { name: "REST APIs", level: 75, icon: <Link size={20} /> },
-      { name: "Firestore", level: 75, icon: <Database size={20} /> }
+      { name: "Firestore", level: 50, icon: <Database size={20} /> }
     ]
   }
 ];
